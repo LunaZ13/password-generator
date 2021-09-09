@@ -1,26 +1,31 @@
 // Assignment code here
 
+  // variables
+  var upper = "65, 90";
+  var lower = "97, 122";
+  var number = "48, 57";
+  var special = "33, 47";
+  // function to generate a random password
+  var generatePassword = function() {
+    alert("Please select from the following password criteria:");
+  
+  var newPassword = "";
 
-// Get references to the #generate element
-var generatePassword = function() {
-  alert("Please select from the following password criteria:");
+  // prompt user to select password length
+  var passLength = parseInt(prompt("Choose a password between 8 and 128 characters."));
 
-  var passwordHas = "";
+  if (passLength < 8 || passLength > 128) {
+      alert("Please select a password between 8 and 128 charcters long! Please try again.");
+      return(generatePassword);
+  }
+  else {
 
-  var containsUpper;
-  var containsLower;
-  var containsNumeric;
-  var containsSpecial;
-
-  var containsUpper = "65, 90";
-  var containsLower = "97, 122";
-  var containsNumeric = "48, 57";
-  var containsSpecial = "33, 47";
-
-  var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  }
 
 
 }
+// Get references to the #generate element
+
 
 // Write password to the #password input
 function writePassword() {
